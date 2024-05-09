@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {  
+  font-family: "Roboto", sans-serif;
+  font-variant: tabular-nums;
+  color-scheme: light dark;
+  
+  --red: #a01515;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    background-color: #ffffff;
+    color: hsl(210, 24%, 8%);
+    /* --y-line-stroke: hsl(210, 4%, 60%);
+    --y-axis-label: hsl(210, 4%, 80%);
+    --x-line-stroke: white; */
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* color: #ffffff;
+    background-color: hsl(210, 24%, 8%); */
+    background-color: #ffffff;
+    color: hsl(210, 24%, 8%);
+    /* --y-line-stroke: hsl(210, 4%, 60%);
+    --y-axis-label: hsl(210, 4%, 80%);
+    --x-line-stroke: white; */
+  }
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
